@@ -1,11 +1,25 @@
-ESP-IDF template app
-====================
+Завдання
 
-This is a template application to be used with [Espressif IoT Development Framework](https://github.com/espressif/esp-idf).
+Під'єднайте LDR до ESP32 у вигляді подільника напруги та під’єднайте його вихід до одного з каналів ADC1.
 
-Please check [ESP-IDF docs](https://docs.espressif.com/projects/esp-idf/en/latest/get-started/index.html) for getting started instructions.
+Під'єднайте світлодіод до будь-якого доступного GPIO.
 
-*Code in this repository is in the Public Domain (or CC0 licensed, at your option.)
-Unless required by applicable law or agreed to in writing, this
-software is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
-CONDITIONS OF ANY KIND, either express or implied.*
+Реалізуйте зчитування значень з ADC у режимі oneshot.
+
+Реалізуйте Simple Moving Average (SMA) для фільтрації значень освітленості.
+
+Використовуючи відфільтровані дані:
+коли стає темно — світлодіод вмикається;
+коли стає світло — світлодіод вимикається.
+
+Світлодіод не повинен мерехтіти при незначних коливаннях освітленості.
+
+Реалізувати два пороги (гістерезис) для запобігання мерехтінню.
+
+
+<img width="730" height="299" alt="Знімок екрана 2026-08-24 о 21 09 31" src="https://github.com/user-attachments/assets/5f916c51-6ed4-4fbb-abf4-7a2a3b7a6039" />
+
+
+
+https://github.com/user-attachments/assets/240e621f-60dc-4cdb-bd2f-52cb033b2bce
+
